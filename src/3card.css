@@ -1,0 +1,10 @@
+.reversed {
+  transform: rotate(180deg);
+}
+.upright {
+    
+}
+
+img, input {
+    margin: 1em;
+}
