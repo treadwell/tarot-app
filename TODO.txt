@@ -1,0 +1,23 @@
+1. Replace source vs regenerate cards
+    - Add 3 blank images in index setup
+    - reset: assign src to base card (or selection)
+    - draw: assign src based on selection
+2. Select layout
+    - Radio buttons at the top to pick the layout
+	    - start with 1 and 3, default 3
+    - Use flex to put number of divs in the middle of the page
+    - Put the position name in the middle of the div
+3. Tap card to turn over
+    - draw: populates blank square with card back
+    - click turns over the card
+    - position name moves to bottom
+4. Add animation
+    - cards move into position from deck at bottom
+    - cards rotate over
+
+Chore
+    1. Push to TMG directory to deploy
+
+Future
+    1. Add meanings
+    2. use API to build stories from meanings via GPT-3
