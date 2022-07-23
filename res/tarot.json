@@ -1,0 +1,626 @@
+{
+    "00": {
+"image": "C00.jpg",
+        "name": "The Fool",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "beginnings, innocence, freedom, spontaneity",
+        "reversed": "folly, foolishness, carelessness"
+    },
+    "01": {
+        "image": "C01.jpg",
+        "name": "The Magician",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "willpower, manifestation of desires, killed, professional, resourceful, creating action\n            through will",
+        "reversed": "trickery, manipulations, deceit, illusions, lies, out of touch w/\n            truth"
+    },
+    "02": {
+        "image": "C02.jpg",
+        "name": "The High Priestess",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "Secrets, initiation, mystery",
+        "reversed": "Shallow knowledge, hidden agendas"
+    },
+    "03": {
+        "image": "C03.jpg",
+        "name": "The Empress",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "abundance, fertility, creativity, pleasure, beauty, happiness, comfort, nature, motherhood, mother, nurturing, love, pregnancy, generosity",
+        "reversed": "dependence, codependence, laziness, stagnation, smothering, stubbornness, creative block, gluttony"
+    },
+    "04": {
+        "image": "C04.jpg",
+        "name": "The Emperor",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "master of all he surveys, benevolent leader",
+        "reversed": "immaturity, dictator"
+    },
+    "05": {
+        "image": "C05.jpg",
+        "name": "The Hierophant",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "manifestation of the divine, Authority, teaching, tradition, conformity,\n            morality",
+        "reversed": "fundamentalism, repression, intolerance, extremism, dogmatism rebellion, subversiveness,\n            divergence"
+    },
+    "06": {
+        "image": "C06.jpg",
+        "name": "The Lovers",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "choices, crossroads, trust, communication, relationships, partnerships",
+        "reversed": "separation, disharmony, suspicion"
+    },
+    "07": {
+        "image": "C07.jpg",
+        "name": "The Chariot",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "drive, ambition, control, direction, determination, success, triumph, victory, will,\n            movement, progress, speed, travel, conquest, battle",
+        "reversed": "lack of control, delay, opposition, stagnation, no direction, aggression, canceled\n            trip"
+    },
+    "08": {
+        "image": "C08.jpg",
+        "name": "Strength",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "bravery, inner understanding that radiates power, strength, gentleness, patience,\n            compassion, courage, inner strength, lust, wholeness within yourself, conviction,\n            kindness, gentility, strength of will, force, willpower, steadfastness, taming beast\n            within",
+        "reversed": "self-doubt, insecurity, weakness, weakness, overbearing, force, cowardice, fear,\n            shyness"
+    },
+    "09": {
+        "image": "C09.jpg",
+        "name": "The Hermit",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "solitude, introspection, philosophy, meditation, withdrawal, contemplation, wisdom,\n            guidance, seeking, mysticism, privacy, prudence, silent guidance, guide,\n            teacher",
+        "reversed": "introversion, agoraphobia, ostracism, exile, paranoia, loneliness, isolation, extreme\n            withdrawal, self-absorption, social misfit"
+    },
+    "10": {
+        "image": "C10.jpg",
+        "name": "The Wheel of Fortune",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "fortune, chance, cycle of life, opportunity, destiny, fate, good luck, movement, turning\n            point, annual event",
+        "reversed": "bad luck, out of control, misfortune, failure, unexpected setback, reversal,\n            delay"
+    },
+    "11": {
+        "image": "C11.jpg",
+        "name": "Justice",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "justice, karma, cause and effect, equality, truth, responsibility, integrity, fairness,\n            judgment, contract, legal action, lawsuit, trial",
+        "reversed": "injustice, dishonesty, hypocrisy, complications, injustice, imbalance, dishonesty,\n            hypocrisy, complications, abuse of power, red tape, bad decision"
+    },
+    "12": {
+        "image": "C12.jpg",
+        "name": "The Hanged Man",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "reversal, letting go, sacrifice, suspension, surrender, withdrawal, restriction,\n            crisis, delay, restraint, detachment, enlightenment, transformation,\n            initiation",
+        "reversed": "limbo, martyrdom, indecision, self-sabotage, narrow-minded, punishment, imprisonment,\n            treason"
+    },
+    "13": {
+        "image": "C13.jpg",
+        "name": "Death",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "death, rebirth, endings, mortality, loss, change, failure, destruction, severing ties,\n            transitions, transformation, inexorable force, elimination",
+        "reversed": "loss of hope, decay, corruption, depression, inertia, holding on"
+    },
+    "14": {
+        "image": "C14.jpg",
+        "name": "Temperance",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "temperance, self-control, balance, moderation",
+        "reversed": "imbalance, excess, temper"
+    },
+    "15": {
+        "image": "C15.jpg",
+        "name": "The Devil",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "self-created bondage, materialism, destructive patterns, excess",
+        "reversed": "freedom, release, restoring control"
+    },
+    "16": {
+        "image": "C16.jpg",
+        "name": "The Tower",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "sudden change or disaster, upheaval, collapse",
+        "reversed": "fear of change, prolonged upheaval, delaying inevitable disaster, avoiding suffering that\n            could lead to growth"
+    },
+    "17": {
+        "image": "C17.jpg",
+        "name": "The Star",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "guidance, serenity, hope,",
+        "reversed": "faithlessness, lack of guidance, negative thoughts"
+    },
+    "18": {
+        "image": "C18.jpg",
+        "name": "The Moon",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "secrets, illusion, deception, imagination, mystery, subconscious, confusion,\n            falsehoods",
+        "reversed": "secrets revealed, mysteries unveiled, insomnia, trouble sleeping, irrationality,\n            shadows, danger"
+    },
+    "19": {
+        "image": "C19.jpg",
+        "name": "The Sun",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "success, clarity, positivity, conscious, happiness, joy, fun, optimism, enthusiasm,\n            glory, clarity, consciousness, success, celebration, energy, vitality, good fortune,\n            greatness, life",
+        "reversed": "negativity, depression, sadness, pessimism, ego, false impressions, delayed happiness,\n            depression, burnt out, over exposure, drought, partial success, incomplete\n            victory"
+    },
+    "20": {
+        "image": "C20.jpg",
+        "name": "Judgement",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "rebirth, renewal, rite of passage, calling, vocation, awakening",
+        "reversed": "doubt, foresaking vocation, ignoring a calling, avoiding change"
+    },
+    "21": {
+        "image": "C21.jpg",
+        "name": "The World",
+        "suit": "major",
+        "rank": "rank",
+        "upright": "completion, success, perfection, achievement, accomplishment, victory, reward, unity,\n            wholeness, fulfillment, endings and beginnings, celebration, center of attention,\n            travel",
+        "reversed": "delays, hesitations, false starts, stagnation, rut, incomplete work, lack of\n            closure"
+    },
+    "22": {
+        "image": "C22.jpg",
+        "name": "Ace of Wands",
+        "suit": "Wands",
+        "rank": "Ace",
+        "upright": "desire, passion, will, drive, inspiration",
+        "reversed": "delay, dissatisfaction, lack of energy, impotence, a missed opportunity"
+    },
+    "23": {
+        "image": "C23.jpg",
+        "name": "2 of Wands",
+        "suit": "Wands",
+        "rank": 2,
+        "upright": "planning, vision, energy, determination ",
+        "reversed": "indecision, confusion, lack of vision, a business deal falls through, disorganization, bad\n            planning"
+    },
+    "24": {
+        "image": "C24.jpg",
+        "name": "3 of Wands",
+        "suit": "Wands",
+        "rank": 3,
+        "upright": "waiting for ship to come in, Starting off, optimism, expectation,\n            attraction",
+        "reversed": "delay, discouragement, missed opportunity, poor judgement"
+    },
+    "25": {
+        "image": "C25.jpg",
+        "name": "4 of Wands",
+        "suit": "Wands",
+        "rank": 4,
+        "upright": "holiday, party, celebration, gathering, honoring someone or something, successful\n            completion of an endeavor, award ceremony, communal achievement",
+        "reversed": "plans go awry, celebrating too soon, discord, arguments"
+    },
+    "26": {
+        "image": "C26.jpg",
+        "name": "5 of Wands",
+        "suit": "Wands",
+        "rank": 5,
+        "upright": "competition, battle between rivals, playfighting",
+        "reversed": "avoiding a potentially beneficial conflict"
+    },
+    "27": {
+        "image": "C27.jpg",
+        "name": "6 of Wands",
+        "suit": "Wands",
+        "rank": 6,
+        "upright": "recognition for success, Victory, honor, achievement, recognition, pride",
+        "reversed": "failure, being overlooked, disappointment, humiliation, dishonor"
+    },
+    "28": {
+        "image": "C28.jpg",
+        "name": "7 of Wands",
+        "suit": "Wands",
+        "rank": 7,
+        "upright": "defending, protecting, valor, courage. standing up for beliefs, bravery, resolve, taking\n            action",
+        "reversed": "defensiveness, overreacting, being easily offended, looking for a fight feeling\n            overwhelmed, yielding, giving up"
+    },
+    "29": {
+        "image": "C29.jpg",
+        "name": "name",
+        "suit": "8 of Wands",
+        "rank": 8,
+        "upright": "speed, swiftness, events set in motion, travel",
+        "reversed": "chaos, confusion, delays, frustration"
+    },
+    "30": {
+        "image": "C30.jpg",
+        "name": "9 of Wands",
+        "suit": "Wands",
+        "rank": 9,
+        "upright": "protecting, defending, stamina, loyalty, strength, discipline, wounded warrior, -\n            perseverance, resilience, pushing forward, home stretch",
+        "reversed": "hopeless cause, martyrdom, disloyalty, defensiveness, stubborn, exhaustion, burnout,\n            close to goal but fatigued"
+    },
+    "31": {
+        "image": "C31.jpg",
+        "name": "10 of Wands",
+        "suit": "Wands",
+        "rank": 10,
+        "upright": "burdens, obligations, numerous opportunities, duties, responsibilities, Too many\n            responsibilities, Carrying the load for others, trying to do it all, putting yourself\n            and your needs first",
+        "reversed": "avoiding responsibility, finally saying no, taking a break, courage, liberation from your\n            burdens"
+    },
+    "32": {
+        "image": "C32.jpg",
+        "name": "Page of Wands",
+        "suit": "Wands",
+        "rank": "Page",
+        "upright": "new project, excitement, inspiration",
+        "reversed": "enthusiasm with lack of planning and direction"
+    },
+    "33": {
+        "image": "C33.jpg",
+        "name": "Knight of Wands",
+        "suit": "Wands",
+        "rank": "Knight",
+        "upright": "energetic, Hasty",
+        "reversed": "impulsive, impetuous, reckless, aggressive, callous"
+    },
+    "34": {
+        "image": "C34.jpg",
+        "name": "Queen of Wands",
+        "suit": "Wands",
+        "rank": "Queen",
+        "upright": "woman of action, no nonsense, country woman",
+        "reversed": "domineering woman, fickle, obstinate"
+    },
+    "35": {
+        "image": "C35.jpg",
+        "name": "King of Wands",
+        "suit": "Wands",
+        "rank": "King",
+        "upright": "passionate, man of action",
+        "reversed": "indecisive, stubborn"
+    },
+    "36": {
+        "image": "C36.jpg",
+        "name": "Ace of Cups",
+        "suit": "Cups",
+        "rank": "Ace",
+        "upright": "new love, overflowing feelings, beginning of emotional fulfillment",
+        "reversed": "wasted emotions, blocked creative potential"
+    },
+    "37": {
+        "image": "C37.jpg",
+        "name": "2 of Cups",
+        "suit": "Cups",
+        "rank": 2,
+        "upright": "union, partnership, connection, falling in love at first sight, harmony, love, feeling in\n            love, kindred spirit, attraction, romance",
+        "reversed": "discord, argument, unrequited love, repulsion, rejection, rose-colored glasses"
+    },
+    "38": {
+        "image": "C38.jpg",
+        "name": "3 of Cups",
+        "suit": "Cups",
+        "rank": 3,
+        "upright": "friendship, family, casual parties, joy, fun, abandon, abundance, celebration, connections,\n            savoring the moment",
+        "reversed": "excessive partying, the morning after, awkward situations, feeling left out"
+    },
+    "39": {
+        "image": "C39.jpg",
+        "name": "4 of Cups",
+        "suit": "Cups",
+        "rank": 4,
+        "upright": "dissatisfaction with life, apathy, ignoring potential joys",
+        "reversed": "taking something for granted, aloofness, boredom"
+    },
+    "40": {
+        "image": "C40.jpg",
+        "name": "5 of Cups",
+        "suit": "Cups",
+        "rank": 5,
+        "upright": "what might have been, Loss, but something remains to be salvaged",
+        "reversed": "acceptance, moving on from dark times, healing"
+    },
+    "41": {
+        "image": "C41.jpg",
+        "name": "6 of Cups",
+        "suit": "Cups",
+        "rank": 6,
+        "upright": "nostalgia, happy memories, kindness, innocence, selflessness, generosity, innocent\n            pleasures, unconditional affection",
+        "reversed": "living in the past, clinging to the past, resisting change and growth, insincere actions,\n            Manipulation, buying affection or friendship"
+    },
+    "42": {
+        "image": "C42.jpg",
+        "name": "7 of Cups",
+        "suit": "Cups",
+        "rank": 7,
+        "upright": "confusion, fantasy, imagination, dreams, illusions, lack of focus, wishful thinking,\n            choices",
+        "reversed": "fears, daydreams interfering with responsibilities, escapism"
+    },
+    "43": {
+        "image": "C43.jpg",
+        "name": "8 of Cups",
+        "suit": "Cups",
+        "rank": 8,
+        "upright": "abandoning something, disillusionment, leaving behind",
+        "reversed": "fear of the unknown, inability to leave a bad situation"
+    },
+    "44": {
+        "image": "C44.jpg",
+        "name": "9 of Cups",
+        "suit": "Cups",
+        "rank": 9,
+        "upright": "wishes fulfilled, contentment, satisfaction with life",
+        "reversed": "overindulgence, smugness, dissatisfaction, resting on laurels, dissatisfaction"
+    },
+    "45": {
+        "image": "C45.jpg",
+        "name": "10 of Cups",
+        "suit": "Cups",
+        "rank": 10,
+        "upright": "family, domestic bliss, optimism, comfort, tranquility",
+        "reversed": "family disputes, arguments, unhappiness, false front, separation"
+    },
+    "46": {
+        "image": "C46.jpg",
+        "name": "Page of Cups",
+        "suit": "Cups",
+        "rank": "Page",
+        "upright": "happy surprise, inner child, intuition, beginner, someone who is seeing as if for the\n            first time a matter of the heart, such as a relationship, emotion, or creative\n            impetus",
+        "reversed": "emotionally immature, immaturity, escapism, leaving reality for fantasy"
+    },
+    "47": {
+        "image": "C47.jpg",
+        "name": "Knight of Cups",
+        "suit": "Cups",
+        "rank": "Knight",
+        "upright": "romance, adventurism, an invitation",
+        "reversed": "moodiness, someone who is too charming, heated emotion/temper"
+    },
+    "48": {
+        "image": "C48.jpg",
+        "name": "Queen of Cups",
+        "suit": "Cups",
+        "rank": "Queen",
+        "upright": "nurturing, compassionate, comforting, kind",
+        "reversed": "cold, compassion run dry, over-reliance on her kindness"
+    },
+    "49": {
+        "image": "C49.jpg",
+        "name": "King of Cups",
+        "suit": "Cups",
+        "rank": "King",
+        "upright": "control over emotions, diplomatic, compassionate",
+        "reversed": "manipulative, a master of emotions with selfish intentions"
+    },
+    "50": {
+        "image": "C50.jpg",
+        "name": "Ace of Swords",
+        "suit": "Swords",
+        "rank": "Ace",
+        "upright": "logic, Intellect, reason, truth",
+        "reversed": "indecision, faulty logic, knee-jerk reaction"
+    },
+    "51": {
+        "image": "C51.jpg",
+        "name": "2 of Swords",
+        "suit": "Swords",
+        "rank": 2,
+        "upright": "a conflict between heart and mind, Need to make a decision, Insufficient\n            data",
+        "reversed": "ignoring facts, refusing to choose, Lying to yourself"
+    },
+    "52": {
+        "image": "C52.jpg",
+        "name": "3 of Swords",
+        "suit": "Swords",
+        "rank": 3,
+        "upright": "unwelcome knowledge, painful truths, heartbreak, heartache, betrayal, disloyalty,\n            unfaithfulness",
+        "reversed": "confusion, painful miscommunication, malicious words, hurtful lies, needless\n            cruelty"
+    },
+    "53": {
+        "image": "C53.jpg",
+        "name": "4 of Swords",
+        "suit": "Swords",
+        "rank": 4,
+        "upright": "rest, contemplation, pause to look within, rest, retreat, meditation, peace, recovery,\n            regrouping, careful consideration",
+        "reversed": "pushing too hard without taking a pause to reflect; burning out, denial, useless\n            obsessing, procrastination, disordered thinking"
+    },
+    "54": {
+        "image": "C54.jpg",
+        "name": "5 of Swords",
+        "suit": "Swords",
+        "rank": 5,
+        "upright": "a victory tinged with defeat, victory, humiliation, aggression, poor sportsmanship, smug\n            self-satisfaction, victory at all cost, stepping on toes",
+        "reversed": "a Pyrrhic victory, dishonor, exhaustion, ready for a conflict to end "
+    },
+    "55": {
+        "image": "C55.jpg",
+        "name": "6 of Swords",
+        "suit": "Swords",
+        "rank": 6,
+        "upright": "journey, heading toward safety, escape, flight, travel, assistance, admitting defeat,\n            impossible situation, protection, shelter",
+        "reversed": "remaining stuck, delay, worsening situation, unseen danger"
+    },
+    "56": {
+        "image": "C56.jpg",
+        "name": "7 of Swords",
+        "suit": "Swords",
+        "rank": 7,
+        "upright": "stealing, rescuing, stealth, dishonesty, sabotage, sneakiness, stealth, traitor,\n            spy",
+        "reversed": "exposure, failure of a dishonorable plan, caught in the act"
+    },
+    "57": {
+        "image": "C57.jpg",
+        "name": "8 of Swords",
+        "suit": "Swords",
+        "rank": 8,
+        "upright": "feeling trapped, restricted, dangerous situation, limited options, helplessness, complex\n            problems",
+        "reversed": "victim mentality, giving up, seeing problems where none exist."
+    },
+    "58": {
+        "image": "C58.jpg",
+        "name": "9 of Swords",
+        "suit": "Swords",
+        "rank": 9,
+        "upright": "anxiety, negative thoughts, nightmares",
+        "reversed": "overreacting, spiraling into negativity, illogical"
+    },
+    "59": {
+        "image": "C59.jpg",
+        "name": "10 of Swords",
+        "suit": "Swords",
+        "rank": 10,
+        "upright": "surrender, ending, disaster, defeat, ruin, Stop fighting, giving in, giving up,\n            acknowledging ending, betrayal, defeat, unavoidable swift disaster",
+        "reversed": "melodrama, refusing to let go, denial"
+    },
+    "60": {
+        "image": "C60.jpg",
+        "name": "Page of Swords",
+        "suit": "Swords",
+        "rank": "Page",
+        "upright": "mental energy, curiosity, new mental adventure",
+        "reversed": "overenthusiasm leading to rushed/poor planning"
+    },
+    "61": {
+        "image": "C61.jpg",
+        "name": "Knight of Swords",
+        "suit": "Swords",
+        "rank": "Knight",
+        "upright": "commitment, logical, rational evidence to destroy opposition",
+        "reversed": "deceitful person, boastful braggart, troublemaker, rash, impetuous, reckless"
+    },
+    "62": {
+        "image": "C62.jpg",
+        "name": "Queen of Swords",
+        "suit": "Queen",
+        "rank": "rank",
+        "upright": "sharp-witted woman, complex, independent",
+        "reversed": "cruel, single-minded focus, cold-hearted, clever"
+    },
+    "63": {
+        "image": "C63.jpg",
+        "name": "King of Swords",
+        "suit": "swords",
+        "rank": "King",
+        "upright": "power, wielding truth as authority, calm intellect",
+        "reversed": "manipulative, using intelligence for selfish aims"
+    },
+    "64": {
+        "image": "C64.jpg",
+        "name": "Ace of Pentacles",
+        "suit": "Pentacles",
+        "rank": "Ace",
+        "upright": "new opportunity for material gain, prosperity, Abundance, resources, money, wealth,\n            health, comfort, pleasure, creation, luck, achieving goals",
+        "reversed": "lost opportunity, blocked path, lack, lost resources, physical concerns, seeking money\n            for its own sake, a missed opportunity"
+    },
+    "65": {
+        "image": "C65.jpg",
+        "name": "2 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 2,
+        "upright": "multitasking, balance, calm behavior in the face of a crisis",
+        "reversed": "robbing Peter to pay Paul, financial distress, awkward situation"
+    },
+    "66": {
+        "image": "C66.jpg",
+        "name": "3 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 3,
+        "upright": "teamwork, creation, skilled work",
+        "reversed": "design by committee , shoddy work, Not doing your best, contributions ignored"
+    },
+    "67": {
+        "image": "C67.jpg",
+        "name": "4 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 4,
+        "upright": "possessiveness, guarding and managing resources, saving, protecting, stewardship",
+        "reversed": "greediness, hoarding, taking what isn't yours, misuse of or carelessness with\n            resources"
+    },
+    "68": {
+        "image": "C68.jpg",
+        "name": "5 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 5,
+        "upright": "physical need, poverty, lack, need, hunger, bankruptcy, ruin, need, poverty,\n            desperation, but help is available",
+        "reversed": "neglecting yourself or finances, relying on charity unnecessarily, taking advantage of\n            others, recovering from poverty, seeing chances you can use"
+    },
+    "69": {
+        "image": "C69.jpg",
+        "name": "6 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 6,
+        "upright": "charity, fairness, gift, donation",
+        "reversed": "stinginess, cheapness, uncharitable judgement"
+    },
+    "70": {
+        "image": "C70.jpg",
+        "name": "7 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 7,
+        "upright": "perseverance, almost ready to harvest rewards, a little more work left",
+        "reversed": "work without adequate rewards, frustration, distraction"
+    },
+    "71": {
+        "image": "C71.jpg",
+        "name": "8 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 8,
+        "upright": "time to buckle down and study, achieve new skills",
+        "reversed": "lack of focus, ambition, or motivation"
+    },
+    "72": {
+        "image": "C72.jpg",
+        "name": "9 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 9,
+        "upright": "accomplishment, discipline, self-confidence, individual achievement, material wealth,\n            safety, security, solitude",
+        "reversed": "not following through, dissatisfaction, looking for external praise"
+    },
+    "73": {
+        "image": "C73.jpg",
+        "name": "10 of Pentacles",
+        "suit": "Pentacles",
+        "rank": 10,
+        "upright": "stable family, security, wealth, abundance",
+        "reversed": "keeping up with the Joneses, insincerity, pretension, domestic troubles"
+    },
+    "74": {
+        "image": "C74.jpg",
+        "name": "Page of Pentacles",
+        "suit": "Pentacles",
+        "rank": "Page",
+        "upright": "new opportunity, desire, material venture, enthusiasm",
+        "reversed": "enthusiasm tapered off, daydreaming instead of action"
+    },
+    "75": {
+        "image": "C75.jpg",
+        "name": "Knight of Pentacles",
+        "suit": "Pentacles",
+        "rank": "Knight",
+        "upright": "hard worker, extreme efficiency, not giving up",
+        "reversed": "work without reward, not seeing the big picture"
+    },
+    "76": {
+        "image": "C76.jpg",
+        "name": "Queen of Pentacles",
+        "suit": "Pentacles",
+        "rank": "Queen",
+        "upright": "domestically talented woman, provides material comfort",
+        "reversed": "imbalance of work and home life"
+    },
+    "77": {
+        "image": "C77.jpg",
+        "name": "King of Pentacles",
+        "suit": "Pentacles",
+        "rank": "King",
+        "upright": "industrious, banker, land owner",
+        "reversed": "stupid person, gambler or miser, dangerous to cross "
+    }
+}
