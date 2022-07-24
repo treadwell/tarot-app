@@ -1,13 +1,17 @@
+var json = $.getJSON({'url': "http://localhost:8080/res/tarot.json", 'async': false})
+json = JSON.parse(json.responseText)
+
 $(document).ready(() => {
     $('body')
     	.append('<div id="images">')
     	.append('<div id="buttons">')
-    	
+
     reset()
 })
 
 function numberToName (n) {
-   return "./res/img/C" + String(n).padStart(2, '0') + ".jpg"
+   //return "./res/img/C" + String(n).padStart(2, '0') + ".jpg"
+   return String(n).padStart(2, '0')
 }
 
 function generateSelection(length, max, min) {
@@ -16,17 +20,22 @@ function generateSelection(length, max, min) {
        const newNumber = Math.floor(Math.random() * (max - min)) + min
        resultsArr.includes(newNumber) ? length += 1 : resultsArr.push(newNumber)
 	}
-  			
+    
     return resultsArr.map(x => numberToName(x))
 }
 
 function addImage (src) {
+    const orientation = (Math.random() <= 0.5) ? 'upright' : 'reversed'
     $('#images')
-        .append($('<img>')
-            .attr('src', src)
-            .attr('class',
-                (Math.random() <= 0.5) ? 'upright' : 'reversed'
-            ))
+        .append($('<figure>')
+            .append($('<img>')
+                .attr('src', `./res/img/${json[src]['image']}`)
+                .attr('class', orientation)
+            )
+            .append($('<figcaption>')
+                .text(json[src][orientation])
+            )
+        )
 }
 
 function drawCards () {
@@ -42,9 +51,7 @@ function drawCards () {
 }
 
 function reset () {
-    const selection = ['./res/img/C-0.jpg', 
-                        './res/img/C-0.jpg', 
-                        './res/img/C-0.jpg']
+    const selection = ['0', '0', '0']
     $('#images').empty()
     selection.map(x => addImage(x))
     $('#buttons').empty()

@@ -1,6 +1,14 @@
 {
+    "0": {
+        "image": "C-0.jpg",
+        "name": "back",
+        "suit": "none",
+        "rank": "none",
+        "upright": "",
+        "reversed": ""
+    },
     "00": {
-"image": "C00.jpg",
+        "image": "C00.jpg",
         "name": "The Fool",
         "suit": "major",
         "rank": "rank",

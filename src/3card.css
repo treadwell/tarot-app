@@ -1,10 +1,22 @@
 .reversed {
   transform: rotate(180deg);
 }
+
 .upright {
     
 }
 
-img, input {
+#images {
+  display: flex;
+  flex-flow: row;
+  margin: 1em;
+}
+
+figure {
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
+}
+
+input {
     margin: 1em;
 }
