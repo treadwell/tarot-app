@@ -24,8 +24,9 @@ function generateSelection(length, max, min) {
     return resultsArr.map(x => numberToName(x))
 }
 
-function addImage (src) {
-    const orientation = (Math.random() <= 0.5) ? 'upright' : 'reversed'
+function addImage (card) {
+    const orientation = card.orientation
+    const src = card.src
     $('#images')
         .append($('<figure>')
             .append($('<img>')
@@ -33,15 +34,26 @@ function addImage (src) {
                 .attr('class', orientation)
             )
             .append($('<figcaption>')
-                .text(json[src][orientation])
+                .text(caption = json[src][orientation])
             )
         )
 }
 
 function drawCards () {
     const selection = generateSelection(3, 78, 0)
+    const orientation = selection.map(_ => genOrientation())
+    let cards = selection.map((src, idx) => {
+        return {
+            src: src,
+            orientation: orientation[idx]
+        }
+    })
+
     $('#images').empty()
-    selection.map(x => addImage(x))
+    cards.map(x => addImage(x))
+
+    genStory(cards)
+
     $('#buttons').empty()
     $('#buttons')
         .append($('<input>')
@@ -50,15 +62,31 @@ function drawCards () {
             .on("click", () => reset()))
 }
 
+function genOrientation() {
+    return (Math.random() <= 0.5) ? 'upright' : 'reversed'
+}
+
+function genStory(cards) {
+    const captions = cards.map(c => json[c.src][c.orientation])
+    // Add a query here
+    const story = "The past is characterized by " + captions[0] + "." + "\n\n" +
+                "The present is characterized by " + captions[1]  + "." + "\n\n" +
+                "The future is characterized by " + captions[2] + "."
+    console.log(story)
+
+}
+
 function reset () {
-    const selection = ['0', '0', '0']
+    const cards = [
+        {src:'0',orientation: "upright"},
+        {src:'0',orientation: "upright"},
+        {src:'0',orientation: "upright"}]
     $('#images').empty()
-    selection.map(x => addImage(x))
+    cards.map(x => addImage(x))
     $('#buttons').empty()
     $('#buttons')
         .append($('<input>')
             .prop("type", "button")
             .prop("value", "Draw Cards")
-            .on("click", () => drawCards()))
-    
+            .on("click", () => drawCards()))  
 }
