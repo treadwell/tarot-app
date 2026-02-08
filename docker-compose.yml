@@ -1,0 +1,16 @@
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./src:/usr/share/nginx/html/src:ro
+      - ./res:/usr/share/nginx/html/res:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - api
+  api:
+    build: ./backend
+    env_file:
+      - .env

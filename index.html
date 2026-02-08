@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>3 Card Tarot Draw</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <link rel="stylesheet" href="./src/3card.css">
-   </head>
-   <body>
-   	  <script src="./src/3card.js"></script>
-   </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3 Card Tarot Draw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,800&family=Space+Grotesk:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/3card.css" />
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <script src="./src/3card.js" defer></script>
+  </head>
+  <body>
+    <div class="aurora"></div>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Tarot Studio</p>
+        <h1>Elegant readings, two classic layouts.</h1>
+        <p class="subhead">
+          Start with a question, choose a layout, and draw your cards to reveal
+          a story aligned with your inquiry.
+        </p>
+      </div>
+      <div class="hero__sigil">
+        <div class="sigil__ring"></div>
+        <div class="sigil__ring sigil__ring--small"></div>
+        <div class="sigil__dot"></div>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section class="question">
+        <div class="question__header">
+          <h2>Your Question</h2>
+          <span class="story__badge">Step 1</span>
+        </div>
+        <textarea
+          id="question"
+          class="question__input"
+          rows="3"
+          placeholder="What would you like guidance on?"
+        ></textarea>
+        <div id="question-error" class="question__error"></div>
+      </section>
+
+      <section class="actions actions--stage">
+        <button class="btn btn--primary" hx-on:click="drawCards()">Draw Cards</button>
+        <button class="btn btn--ghost" hx-on:click="resetDraw()">Reset</button>
+      </section>
+
+      <section class="controls">
+        <div class="layout-picker">
+          <span class="layout-picker__label">Layout</span>
+          <button class="pill is-active" data-layout="three" hx-on:click="setLayout('three')">Past · Present · Future</button>
+          <button class="pill" data-layout="celtic" hx-on:click="setLayout('celtic')">Celtic Cross</button>
+        </div>
+        <div class="note">Step 2: choose a layout, then draw your cards.</div>
+      </section>
+
+      <section class="cards">
+        <div id="images" class="cards__row"></div>
+      </section>
+
+      <section class="story">
+        <div class="story__header">
+          <h2>Interpretation</h2>
+          <button class="btn btn--small" hx-on:click="requestInterpretation()">Get Interpretation</button>
+          <span class="story__badge">Step 3</span>
+        </div>
+        <pre id="story" class="story__text">Draw cards to generate a reading.</pre>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Tarot imagery and captions from the included dataset.</span>
+    </footer>
+  </body>
 </html>
