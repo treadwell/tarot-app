@@ -128,19 +128,25 @@ async function genStory(cards, data, question) {
   const storyEl = document.getElementById('story')
   storyEl.textContent = 'Consulting the cards…'
 
+  const payloadCards = cards.map((card, idx) => {
+    const meta = data[card.src]
+    if (!meta) {
+      throw new Error(`Card metadata missing for id ${card.src}`)
+    }
+
+    return {
+      id: card.src,
+      name: meta.name,
+      orientation: card.orientation,
+      meaning: meta[card.orientation],
+      position: config.labels[idx],
+    }
+  })
+
   const payload = {
     question,
     layout: config.name,
-    cards: cards.map((card, idx) => {
-      const meta = data[card.src]
-      return {
-        id: card.src,
-        name: meta.name,
-        orientation: card.orientation,
-        meaning: meta[card.orientation],
-        position: config.labels[idx],
-      }
-    }),
+    cards: payloadCards,
   }
 
   try {
@@ -154,13 +160,22 @@ async function genStory(cards, data, question) {
 
     if (!response.ok) {
       const errorText = await response.text()
-      throw new Error(errorText || 'Request failed')
+      let message = errorText || 'Request failed'
+      try {
+        const parsed = JSON.parse(errorText)
+        if (parsed?.detail) {
+          message = typeof parsed.detail === 'string' ? parsed.detail : JSON.stringify(parsed.detail)
+        }
+      } catch (parseError) {
+        // Keep raw response body when error is not JSON.
+      }
+      throw new Error(message)
     }
 
     const dataResponse = await response.json()
     storyEl.textContent = dataResponse.story || 'No story returned.'
   } catch (err) {
-    storyEl.textContent = 'Unable to generate a reading. Check the API service and your OpenAI key.'
+    storyEl.textContent = `Unable to generate a reading. ${err.message || ''}`.trim()
     console.error(err)
   }
 }
